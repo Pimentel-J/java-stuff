@@ -11,7 +11,7 @@ public class Palindrome {
      * Recursively returns the inverted number
      *
      * @param origin  number to invert
-     * @param reverse reversed number (created incrementally during the recursion)
+     * @param reverse reversed number (created incrementally)
      * @return        inverted number
      */
     public static int palindromeNumber(int origin, int reverse) {
