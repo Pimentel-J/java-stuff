@@ -1,7 +1,5 @@
 package com.stuff.recursion;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -10,14 +8,6 @@ import static org.junit.jupiter.api.Assertions.*;
  * Tests of class Gcd.
  */
 class GcdTest {
-
-    @BeforeEach
-    void setUp() {
-    }
-
-    @AfterEach
-    void tearDown() {
-    }
 
     /**
      * Test of gcd method, of class Gcd.
