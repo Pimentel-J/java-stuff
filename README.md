@@ -10,7 +10,7 @@ A small (*for now*) collection of Java algorithms and examples.
 
 1. [Recursion](./src/main/java/com/stuff/recursion/) / [Tests](./src/test/java/com/stuff/recursion/)
 
-2. [Threads](./src/main/java/com/stuff/threads/)
+2. [Concurrency](./src/main/java/com/stuff/concurrency/)
 
 3. *In progress...*
 
