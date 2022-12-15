@@ -4,11 +4,11 @@
 
 [![Java][Java-badge]][Java-url]
 
-A small (for now) collection of Java algorithms and examples.
+A small (*for now*) collection of Java algorithms and examples.
 
 ## Index
 
-1. [Recursion](./src/main/java/com/stuff/recursion/) / [Test](./src/test/java/com/stuff/recursion/)
+1. [Recursion](./src/main/java/com/stuff/recursion/) / [Tests](./src/test/java/com/stuff/recursion/)
 
 2. [Threads](./src/main/java/com/stuff/threads/)
 
