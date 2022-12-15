@@ -1,13 +1,14 @@
-package com.stuff.threads;
+package com.stuff.concurrency;
 
 import java.util.Vector;
 import java.util.concurrent.Semaphore;
 
 /**
  * Java Concurrency - Threads
- * Concurrent ticket selling simulation.
+ * Concurrent ticket selling simulation
  *
  * @author Pimentel
+ * @see java.lang.Runnable
  */
 public class Seller implements Runnable {
 

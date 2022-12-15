@@ -1,6 +1,7 @@
-package com.stuff.threads;
+package com.stuff.concurrency;
 
 /**
+ * Java Concurrency - Threads
  * Ticket class
  *
  * @author Pimentel
