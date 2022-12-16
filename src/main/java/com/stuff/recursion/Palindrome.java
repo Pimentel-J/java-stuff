@@ -2,8 +2,6 @@ package com.stuff.recursion;
 
 /**
  * Recursion palindrome example
- *
- * @author Pimentel
  */
 public class Palindrome {
 
