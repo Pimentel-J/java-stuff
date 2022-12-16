@@ -4,23 +4,23 @@
 
 [![Java][Java-badge]][Java-url]
 
-A small (*for now*) collection of Java algorithms and examples.
+A small collection of Java algorithms and examples.
 
 ## Index
 
-1. [Recursion](./src/main/java/com/stuff/recursion/) / [Tests](./src/test/java/com/stuff/recursion/)
+1. [Recursion](./src/main/java/com/stuff/recursion/)
+
+    1.1. [Tests](./src/test/java/com/stuff/recursion/)
 
 2. [Concurrency](./src/main/java/com/stuff/concurrency/)
 
-3. *In progress...*
+3. [Generics](./src/main/java/com/stuff/generics/)
 
-(...)
+4. *In progress...*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-*By Pimentel*
-
-# License
+## License
 
 This project is licensed under the terms of the MIT license.
 
