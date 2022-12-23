@@ -4,7 +4,7 @@
 
 [![Java][Java-badge]][Java-url]
 
-A small collection of Java algorithms and examples.
+A small collection of Java algorithms.
 
 ## Index
 
@@ -14,9 +14,7 @@ A small collection of Java algorithms and examples.
 
 2. [Concurrency](./src/main/java/com/stuff/concurrency/)
 
-3. [Generics](./src/main/java/com/stuff/generics/)
-
-4. *In progress...*
+3. *In progress...*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
