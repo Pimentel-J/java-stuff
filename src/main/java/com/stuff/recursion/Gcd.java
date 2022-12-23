@@ -3,6 +3,8 @@ package com.stuff.recursion;
 /**
  * Recursive greatest common divisor (GCD) calculator.
  * The greatest common factor of two numbers is the largest number that divides them both.
+ *
+ * @author Pimentel
  */
 public class Gcd {
 

@@ -2,6 +2,8 @@ package com.stuff.recursion;
 
 /**
  * Recursive labyrinth
+ *
+ * @author Pimentel
  */
 public class Labyrinth {
 
@@ -21,7 +23,9 @@ public class Labyrinth {
 
         actual[y][x] = 9;
 
+        // Labyrinth exit
         if (y == actual.length - 1 && x == actual[y].length - 1) {
+            printMatrix(actual);
             return actual;
         }
         //North
@@ -67,11 +71,12 @@ public class Labyrinth {
     }
 
     /**
-     * Prints the matrix
+     * Prints the matrix labyrinth
+     *
      * @param matrix labyrinth
      */
     private static void printMatrix(int[][] matrix) {
-        System.out.println("Labyrinth matrix");
+        System.out.println("Labyrinth matrix (9 marks the path)");
         for (int x = 0; x < matrix.length; x++) {
             for (int y = 0; y < matrix[x].length; y++) {
                 System.out.print(matrix[x][y] + " ");
