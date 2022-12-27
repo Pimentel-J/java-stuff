@@ -14,7 +14,9 @@ A small collection of Java algorithms.
 
 2. [Concurrency](./src/main/java/com/stuff/concurrency/)
 
-3. *In progress...*
+3. [Generics](./src/main/java/com/stuff/generics/)
+
+4. *In progress...*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
