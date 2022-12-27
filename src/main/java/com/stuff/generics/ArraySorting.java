@@ -3,7 +3,7 @@ package com.stuff.generics;
 import java.util.Arrays;
 
 /**
- * Generic array sorting
+ * Generic Array Sorting class
  *
  * @author Pimentel
  */
@@ -11,6 +11,11 @@ public class ArraySorting {
 
     /**
      * Swaps two array positions
+     *
+     * @param array
+     * @param i
+     * @param j
+     * @param <E>
      */
     public static <E> void swap(E[] array, int i, int j) {
 
@@ -68,23 +73,21 @@ public class ArraySorting {
     }
 
     /**
-     * insertionSort Algorithm
+     * Insertion Sort Algorithm
+     *
+     * @param array
+     * @param <E>
      */
     public static <E extends Comparable<E>> void insertionSort(E[] array) {
         for (int i = 1; i < array.length; i++) {
-            // elemento do array sorted
+            //sorted array element
             int temp = i;
-            /* 1 */
-            // key para comparar com outros
+            // key to compare others
             E k = array[i];
-            /* 8 */
 
             while (temp > 0 && array[temp - 1].compareTo(k) > 0) {
-                /* 1>0 && 21 > 8 */
                 array[temp] = array[temp - 1];
-                /* 21 */
                 temp -= 1;
-                /* 0 */
             }
 
             array[temp] = k;
@@ -92,7 +95,13 @@ public class ArraySorting {
     }
 
     /**
-     * Mergesort Algorithm - E[] S1 = Arrays.copyOfRange(S, 0, mid);
+     * Merge Sort Algorithm
+     * E[] S1 = Arrays.copyOfRange(S, 0, mid);
+     *
+     * @param S1
+     * @param S2
+     * @param S
+     * @param <E>
      */
     private static <E extends Comparable<E>> void merge(E[] S1, E[] S2, E[] S) {
         int i = 0; int j = 0; int k = 0;
@@ -119,6 +128,12 @@ public class ArraySorting {
         }
     }
 
+    /**
+     * Merge Sort Algorithm (public)
+     *
+     * @param S
+     * @param <E>
+     */
     public static <E extends Comparable<E>> void mergeSort(E[] S) {
         if (S.length >= 2) {
             int mid = S.length / 2;
