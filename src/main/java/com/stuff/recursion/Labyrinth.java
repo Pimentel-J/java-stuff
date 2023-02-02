@@ -19,7 +19,7 @@ public class Labyrinth {
      * @param x      coordinate x in the labyrinth
      * @return the marked labyrinth or null if there is no way
      */
-    public static int[][] check(int[][] actual, int y, int x) {
+    public static int[][] checkPath(int[][] actual, int y, int x) {
 
         actual[y][x] = 9;
 
@@ -30,25 +30,25 @@ public class Labyrinth {
         }
         //North
         if (isValid(actual, y - 1, x)) {
-            if (check(actual, y - 1, x) != null) {
+            if (checkPath(actual, y - 1, x) != null) {
                 return actual;
             }
         }
         //East
         if (isValid(actual, y, x + 1)) {
-            if (check(actual, y, x + 1) != null) {
+            if (checkPath(actual, y, x + 1) != null) {
                 return actual;
             }
         }
         //South
         if (isValid(actual, y + 1, x)) {
-            if (check(actual, y + 1, x) != null) {
+            if (checkPath(actual, y + 1, x) != null) {
                 return actual;
             }
         }
         //West
         if (isValid(actual, y, x - 1)) {
-            if (check(actual, y, x - 1) != null) {
+            if (checkPath(actual, y, x - 1) != null) {
                 return actual;
             }
         }

@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Tests of class Labyrinth.
+ *
+ * @author Pimentel
  */
 class LabyrinthTest {
 
@@ -18,9 +20,10 @@ class LabyrinthTest {
      * The path taken is marked with 9
      */
     @Test
-    public void testCheck() {
-        System.out.println("check");
-        int[][] actual = {
+    public void testCheckPath() {
+        System.out.println("checkPath");
+
+        int[][] labyrinth = {
                 {1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1},
                 {1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1},
                 {1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1},
@@ -42,10 +45,10 @@ class LabyrinthTest {
                 {0, 0, 0, 0, 9, 9, 9, 9, 9, 9, 9, 9, 9}
         };
 
-        int[][] result = Labyrinth.check(actual, y, x);
+        int[][] result = Labyrinth.checkPath(labyrinth, y, x);
         assertArrayEquals(expResult, result);
 
-        int[][] impossibleActual = {
+        int[][] impossibleLabyrinth = {
                 {1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1},
                 {1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1},
                 {1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1},
@@ -55,9 +58,8 @@ class LabyrinthTest {
                 {0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1}
         };
 
-        expResult = null;
-        result = Labyrinth.check(impossibleActual, y, x);
-        assertArrayEquals(expResult, result);
+        result = Labyrinth.checkPath(impossibleLabyrinth, y, x);
+        assertArrayEquals(null, result);
     }
 
     @Disabled
