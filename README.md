@@ -3,6 +3,7 @@
 # Java Stuff
 
 [![Java][Java-badge]][Java-url]
+[![IntelliJ IDEA][IntelliJ-badge]][IntelliJ-url]
 
 A small collection of Java algorithms.
 
@@ -22,7 +23,7 @@ This project is licensed under the terms of the MIT license.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
 [Java-badge]: https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=CoffeeScript&logoColor=white
-
 [Java-url]: https://www.java.com
+[IntelliJ-badge]: https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white
+[IntelliJ-url]: https://www.jetbrains.com/idea/
