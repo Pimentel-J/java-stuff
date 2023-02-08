@@ -12,8 +12,8 @@ A small collection of Java algorithms.
 | Class                                                    | Unit Tests                                                            |
 |----------------------------------------------------------|-----------------------------------------------------------------------|
 | 1. [Recursion](./src/main/java/com/stuff/recursion/)     | <div align="center">[🔗](./src/test/java/com/stuff/recursion/) </div> |
-| 2. [Concurrency](./src/main/java/com/stuff/concurrency/) |                                                                       |
-| 3. [Generics](./src/main/java/com/stuff/generics/)       |                                                                       |
+| 2. [Generics](./src/main/java/com/stuff/generics/)       | <div align="center">[🔗](./src/test/java/com/stuff/generics) </div>   |
+| 3. [Concurrency](./src/main/java/com/stuff/concurrency/) |                                                                       |
 
 ## License
 
