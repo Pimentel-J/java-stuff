@@ -1,6 +1,6 @@
 package com.stuff.generics;
 
-import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,45 +12,53 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class ArraySortingTest {
 
-    /**
-     * Test of swap method, of class ArraySorting.
-     */
+    private String[] strArray;
+
+    @BeforeEach
+    void setUp() {
+        strArray = new String[]{"e", "c", "d", "a", "b"};
+    }
+
     @Test
     void testSwap() {
         System.out.println("swap");
-        String[] strArray = {"a", "b", "c", "d", "e"};
-        ArraySorting.swap(strArray, 1, 4);
-        assertArrayEquals(strArray, new String[]{"a", "e", "c", "d", "b"});
+        ArraySorting.swapArrayElement(strArray, 1, 4);
+        assertArrayEquals(strArray, new String[]{"e", "b", "d", "a", "c"});
     }
 
-    @Disabled
-    void testPrintArray() {
-    }
-
-    /**
-     * Test of selectionSort method, of class ArraySorting.
-     */
     @Test
     void testSelectionSort() {
         System.out.println("selectionSort");
-        String[] strArray = {"e", "d", "c", "b", "a"};
         ArraySorting.selectionSort(strArray);
         assertArrayEquals(strArray, new String[]{"a", "b", "c", "d", "e"});
     }
 
-    @Disabled
+    @Test
     void testBubbleSort() {
+        System.out.println("bubbleSort");
+        ArraySorting.bubbleSort(strArray);
+        assertArrayEquals(strArray, new String[]{"a", "b", "c", "d", "e"});
     }
 
-    @Disabled
+    @Test
     void testInsertionSort() {
+        System.out.println("insertionSort");
+        ArraySorting.insertionSort(strArray);
+        assertArrayEquals(strArray, new String[]{"a", "b", "c", "d", "e"});
     }
 
-    @Disabled
+    @Test
     void testMergeSort() {
+        System.out.println("mergeSort");
+        ArraySorting.mergeSort(strArray);
+        assertArrayEquals(strArray, new String[]{"a", "b", "c", "d", "e"});
     }
 
-    @Disabled
+    @Test
     void testQuickSort() {
+        System.out.println("quickSort");
+        ArraySorting.quickSort(strArray);
+        assertArrayEquals(strArray, new String[]{"a", "b", "c", "d", "e"});
     }
+
 }
