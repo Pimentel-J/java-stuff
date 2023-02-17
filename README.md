@@ -9,11 +9,11 @@ A small collection of Java algorithms.
 
 ## Index
 
-| Class                                                    | Unit Tests                                                            |
-|----------------------------------------------------------|-----------------------------------------------------------------------|
-| 1. [Recursion](./src/main/java/com/stuff/recursion/)     | <div align="center">[🔗](./src/test/java/com/stuff/recursion/) </div> |
-| 2. [Generics](./src/main/java/com/stuff/generics/)       | <div align="center">[🔗](./src/test/java/com/stuff/generics) </div>   |
-| 3. [Concurrency](./src/main/java/com/stuff/concurrency/) |                                                                       |
+| Class                                                                                                                                                                                                         | Unit Tests                                                                                       |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| 1. [Recursion](./src/main/java/com/stuff/recursion)                                                                                                                                                           | <div align="center">[🔗](./src/test/java/com/stuff/recursion) </div>                             |
+| 2. [Generic Array Sorting](./src/main/java/com/stuff/generics/GenericArraySorting.java)<br/>&bull; Selection Sort<br/>&bull; Bubble Sort<br/>&bull; Insertion Sort<br/>&bull; Merge Sort<br/>&bull; Quicksort | <div align="center">[🔗](./src/test/java/com/stuff/generics/GenericArraySortingTest.java) </div> |
+| 3. [Concurrency](./src/main/java/com/stuff/concurrency)                                                                                                                                                       |                                                                                                  |
 
 ## License
 
