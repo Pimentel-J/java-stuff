@@ -135,13 +135,13 @@ public class GenericArraySorting {
     /**
      * Quicksort algorithm (auxiliary private method)
      *
-     * @param array        array with generic type E elements
-     * @param leftSubList  left sub-list (with elements less than the pivot)
-     * @param rightSubList right sub-list (with elements greater than the pivot)
+     * @param array             array with generic type E elements
+     * @param leftSubListIndex  left sub-list index (elements less than the pivot)
+     * @param rightSubListIndex right sub-list index (elements greater than the pivot)
      */
-    private static <E extends Comparable<E>> void quicksort(E[] array, int leftSubList, int rightSubList) {
-        E pivot = array[(leftSubList + rightSubList) / 2];
-        int i = leftSubList; int k = rightSubList;
+    private static <E extends Comparable<E>> void quicksort(E[] array, int leftSubListIndex, int rightSubListIndex) {
+        E pivot = array[(leftSubListIndex + rightSubListIndex) / 2];
+        int i = leftSubListIndex; int k = rightSubListIndex;
 
         while (i <= k) {
             while (array[i].compareTo(pivot) < 0) {
@@ -156,11 +156,11 @@ public class GenericArraySorting {
                 k--;
             }
         }
-        if (leftSubList < k) {
-            quicksort(array, leftSubList, k);
+        if (leftSubListIndex < k) {
+            quicksort(array, leftSubListIndex, k);
         }
-        if (rightSubList > i) {
-            quicksort(array, i, rightSubList);
+        if (rightSubListIndex > i) {
+            quicksort(array, i, rightSubListIndex);
         }
     }
 }
